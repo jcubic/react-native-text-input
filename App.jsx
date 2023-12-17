@@ -29,6 +29,7 @@ This is yet another text
         selection={selection}
         style={styles.textInput}
         multiline={true}
+        onChangeText={setValue}
         onSelectionChange={onSelectionChange}
       >
         {value.split(/(\n)/).map((node, index) => {
@@ -40,6 +41,7 @@ This is yet another text
         style={styles.textInput}
         multiline={true}
         value={value}
+        onChangeText={setValue}
         onSelectionChange={onSelectionChange}
       />
       <StatusBar style="auto" />
